@@ -1,0 +1,57 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main">
+
+    <div>
+        <form action="/logout" method="post" class="logoutbutton">
+            <button type="submit" class="btnlog">Logout</button>
+        </form>
+    </div>
+
+    <div>
+        <h1>Create New Reminder</h1>
+    </div>
+
+    <div>  
+        
+    <form action="/postreminder" method="post">
+        <div>
+            <label for="subject">Enter a Reminder to Email</label>
+            <input type="subject" class="inputsubject" name="subject" placeholder="Reminder Subject">
+          </div>
+          <div>
+            <label for="when">Reminder Time</label>
+            <input type="datetime-local" name="remindertime" class="remindertime">
+            <button type="submit" class="btnpost">Submit</button>
+          </div>
+    </form>
+    
+    </div>
+    
+    <div class="titleofreminder">
+        
+        <h1>List of Reminders to Email</h1>
+        <% if (posts.length > 0){ %>
+        
+        <ul class="reminderlist">
+            <% posts.forEach(function(post){ %>
+                
+                <li><%= post.subject %> <br> 
+                <div class="datetime">
+                    <%= post.reminderdate.toISOString().split('T')[0] %> at <%= post.remindertime %>
+                </div>
+            </li>
+                <% }) %>
+            </ul>
+
+           <% } else { %>
+            <h3> No Reminder </h3>
+           <% } %>
+            
+    </div>
+
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>

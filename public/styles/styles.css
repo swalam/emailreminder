@@ -1,0 +1,138 @@
+* {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    padding: 20px 0px;
+
+}
+
+.headertext {
+    width: 50%;
+    margin: auto;
+}
+
+.main {
+    width: 50%;
+    margin: 70px auto;
+    position: relative;
+}
+
+.header h1 {
+    color: white;
+    margin: 0px;
+}
+
+label {
+    display: block;
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+input {
+    display: block;
+    font-size: 1.4rem;
+    margin: 20px 0px;
+    width: 300px;
+    height: 30px;
+}
+
+.btnlogin {
+    font-size: 20px;
+    padding: 8px 15px;
+    color: white;
+    background-color: #018749;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btnlogin:hover {
+    background-color: #1B4D3E;
+}
+
+.btnregister {
+    font-size: 20px;
+    padding: 8px 15px;
+    color: white;
+    background-color: #007FFF;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.btnregister:hover {
+    background-color: #002D62;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 5px;
+    color: darkgrey;
+}
+
+/* CSS for Index html */
+
+.inputsubject {
+    width: 100%;
+}
+
+.remindertime {
+    color: rgba(95, 92, 92, 0.849);
+}
+
+.btnpost {
+    font-size: 20px;
+    padding: 8px 15px;
+    color: white;
+    background-color: #007FFF;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.btnpost:hover {
+    background-color: #002D62;
+}
+
+.titleofreminder > h1 {
+    color:brown;
+}
+
+.reminderlist {
+    padding-left: 0px;
+}
+
+.reminderlist > li {
+    font-size: 2rem;
+    margin: 25px 0px;
+    list-style-type: none;
+    background-color: rgba(128, 128, 128, 0.13);
+    padding: 20px 5px;
+}
+
+.datetime {
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.btnlog {
+    font-size: 20px;
+    padding: 8px 15px;
+    color:black;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.btnlog:hover {
+    background-color:rgba(250, 235, 215, 0.452)
+}
+
+.logoutbutton {
+    position: absolute;
+    right: 0px;
+}
